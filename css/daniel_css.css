@@ -1,10 +1,7 @@
 div.daniel1div{
-    float: left;
     width: 500px; 
-    color: white;
     margin: auto;
     padding: 10px;
-    float: left;
 }
 h1.daniel1div{
     font-size: 60px;
@@ -15,16 +12,21 @@ p.daniel1div{
     font-size: 30px;
 }
 
-img.daniel1div{
-    width: 50%;
-    float: right;
 
+.danieldiv h1{
+    font-size: 60px;
 }
 
+.danieldiv img{
+    width: 50%;
+}
 
 #fosforo{
     
     width: 50px;
     height: 500px;
-    float: left;
+}
+
+.teamImages img{
+    width: 300px;
 }
