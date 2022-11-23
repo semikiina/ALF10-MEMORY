@@ -4,163 +4,180 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>ALT+F10</title>
-    <link href="css/daniel_css.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
-  </head>
-  <style>
-    body{
-        background-color: #030413;
-        color: whitesmoke;
-    }
-    .center{
-        text-align: center;
-    }
-    .imgg{
-        width: 100%;
-        height: auto;
-        position: relative;
-    }
-    .imggg{
-        border-radius: 5px;
-    }
-    .marg{
-        padding: 5%;
-    }
-</style>
-  <body style="background-color: #030414;">
+    <link href="css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
+</head>
+  <body class="body">
+        <nav class="navbar navbar-expand-lg bg-transparent">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <img src="images/logo2.png" alt="" width="200">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse d-flex" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link nav-itemText" href="#">Features</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link nav-itemText" href="#">Pricing</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link nav-itemText">Disabled</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
     <div class="container">
-        <div class="row ">
-            <div class="col-12 col-md-3">
-                <img src="images/microchip.png" style="width: 100%;">
-            </div>
-            <div class="col-12 col-md-9" style="color:whitesmoke">
-                <div class="logoSection d-flex flex-column align-items-center">
-                    <a href=""><img src="images/logo.png" width="400" /></a>
-                    <h3>The revolucionary microchip</h3>
-                    <h6><i>To those moments that you say: "I wished I had recorded that"</i></h6>
-                    <button class="btn px-4" style="background-color: #56b4be;color:whitesmoke;border-radius: 20px;">BUY</button>
-                </div>
-            </div>
-        </div>
-        <div class=" d-flex flex-row justify-content-center">
+        <section class="titleSection">
             <div class="row">
-                <div class="col danieldiv">
-                    <h1>
-                        HOW BIG <br>
-                        IS OUR<br>
-                        MICROCHIP?<br>
-                         </h1>
-                         <p >
-                          Lets compare it with a phosphor.
-                         </p>
-                         <br>
-                         <br>
-                         <br>
-                      <img src="images/microchip_glow.png" alt="" >
+                <div class="col-12 col-md-6">
+                    <img src="images/microchip.png" class="microchipImg" >
                 </div>
-                <div class="col" id="fosforo">
-                    <img src="images/fosforo.png" alt="" height="100%">
+                <div class="col-12 col-md-6" >
+                    <div class="d-flex flex-column align-items-center">
+                        <h3 class="title">THE <br> REVOLUCIONARY <br>MICROCHIP</h3>
+                        <h1><i>To those moments that you say: "I wished I had recorded that"</i></h1>
+                        <button class="buyBtn " >BUY</button>
+                        
+                    </div>
                 </div>
-              </div>
-        </div>
-          
-         
-          <div  class="row">
-            <div class="col-6">
-                <h1 class="text center">HOW DOES IT WORKS?</h1>
-                <br>
-                <h4 class="text">Whit the power of a microchip directly 
-                connected to the user’s brain you can 
-                change your day-to-day life. 
-                
-                The main feature is the capability of 
-                keeping the memories you wish.
-                
-                 Let’s be honest: how many times did you 
-                saw your keys and 5 minutes later forgot 
-                where they were? 
-                
-                This ends with ALT+F10. With only the 
-                thought of reminding where the keys are, 
-                you simply activate the microchip task. 
-                
-                It will upload to an external cloud you’re 
-                last 5 minute seen memories</h4>
             </div>
-            
-            <div class="col-6">
-                <img class="imgg" src="images/information.jpg" alt="Girl in a jacket" width="500" height="600">
-            </div>
-        </div>
-        <div class="row">
-            <div id="carouselExampleDark" class="carousel carousel-dark slide marg" data-bs-ride="carousel">
-                <div class="carousel-indicators">
-                  <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                  <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                  <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                </div>
-                <div class="carousel-inner">
-                  <div class="carousel-item active" data-bs-interval="10000">
-                    <img src="https://picsum.photos/300/150?random=1" class="d-block w-100" alt="...">
-                    <div class="carousel-caption d-none d-md-block">
-                      <h5 class="text">First slide label</h5>
-                      <p class="text">Some representative placeholder content for the first slide.</p>
-                    </div>
-                  </div>
-                  <div class="carousel-item" data-bs-interval="2000">
-                    <img src="https://picsum.photos/300/150?random=2" class="d-block w-100" alt="...">
-                    <div class="carousel-caption d-none d-md-block">
-                      <h5 class="text">Second slide label</h5>
-                      <p class="text">Some representative placeholder content for the second slide.</p>
-                    </div>
-                  </div>
-                  <div class="carousel-item">
-                    <img src="https://picsum.photos/300/150?random=3" class="d-block w-100" alt="...">
-                    <div class="carousel-caption d-none d-md-block">
-                      <h5 class="text">Third slide label</h5>
-                      <p class="text">Some representative placeholder content for the third slide.</p>
-                    </div>
-                  </div>
-                </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
-                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
-                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden">Next</span>
-                </button>
-              </div>
-        </div>
-        <section class="TeamSection">
-            <div class="row text-center">
+        </section>
+        <section class="howBigSection">
+            <div class=" d-flex flex-row justify-content-center align-items-end">
                 <div class="row">
-                    <div class="col-1 d-flex justify-content-cend">
+                    <div class="col danieldiv">
+                        <h1>
+                            HOW BIG <br>
+                            IS OUR<br>
+                            MICROCHIP?<br>
+                             </h1>
+                             <p >
+                              Lets compare it with a phosphor.
+                             </p>
+                             <br>
+                             <br>
+                             <br>
+                          <img src="images/microchip.png" alt="" >
+                    </div>
+                    <div class="col d-flex " id="fosforo">
+                        <img src="images/clip.png" alt="" height="100%">
+                    </div>
+                  </div>
+            </div>
+        </section>
+        <section class="howItWorksSection">
+            <div  class="row">
+                <div class="col-6">
+                    <h1 class="text center">HOW DOES IT WORKS?</h1>
+                    <br>
+                    <h4 class="text">Whit the power of a microchip directly 
+                    connected to the user’s brain you can 
+                    change your day-to-day life. 
+                    
+                    The main feature is the capability of 
+                    keeping the memories you wish.
+                    
+                     Let’s be honest: how many times did you 
+                    saw your keys and 5 minutes later forgot 
+                    where they were? 
+                    
+                    This ends with ALT+F10. With only the 
+                    thought of reminding where the keys are, 
+                    you simply activate the microchip task. 
+                    
+                    It will upload to an external cloud you’re 
+                    last 5 minute seen memories</h4>
+                </div>
+                
+                <div class="col-6">
+                    <img class="imgg" src="images/information.jpg" alt="Girl in a jacket" width="500" height="600">
+                </div>
+            </div>
+        </section>
+        <section class="featuresSection">
+            <div class="row">
+                <div id="carouselExampleDark" class="carousel carousel-dark slide marg" data-bs-ride="carousel">
+                    <div class="carousel-inner p-5">
+                        <div class="carousel-item active" data-bs-interval="400000000">
+                            <div class="row">
+                                <div class="col-12 col-md-8 imgCar">
+                                    <h4 class="imgText">HEALTCARE</h4>
+                                    <img src="images/doctor.png" class="d-block w-100 imgCar" alt="...">
+                                </div>
+                                <div class="col-12 col-md-4 divCar textoCar">
+                                    <p>The adoption of technology in healthcare over the years has led to better diagnosis and treatment of patients. Out of all the benefited sectors from technology adoption, healthcare is probably the most important one. </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item" data-bs-interval="4000">
+                            <div class="row">
+                                <div class="col-12 col-md-8 imgCar">
+                                    <img src="images/engenheiros.jpg" class="d-block w-100 imgCar" alt="...">
+                                </div>
+                                <div class="col-12 col-md-4 divCar textoCar">
+                                    <h5>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam blandit porta risus, a auctor eros tincidunt sit amet. Etiam luctus mauris vel lacus luctus, et faucibus tortor lacinia. Praesent vel.</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item" data-bs-interval="4000">
+                            <div class="row">
+                                <div class="col-12 col-md-8 imgCar">
+                                    <img src="https://picsum.photos/300/150?random=2" class="d-block w-100 imgCar" alt="...">
+                                </div>
+                                <div class="col-12 col-md-4 divCar textoCar">
+                                    <h5>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam blandit porta risus, a auctor eros tincidunt sit amet. Etiam luctus mauris vel lacus luctus, et faucibus tortor lacinia. Praesent vel.</h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+            </div>
+        </section>
+        <section class="teamSection">
+            <div class="row text-center">
+                <div class="d-flex flex-row justify-content-center">
+                    <div class="d-flex flex-column justify-content-cend">
                         <img src="images/logoTeam.png" width="200"/>
                     </div>
                     <div class="col danieldiv text-center">
                         <h1>Team Members</h1>
-                        <h2>Meet our professional members</h2>
+                        <h2>Meet our professional team</h2>
                     </div>
                 </div>
                 <div class="row teamImages">
-                    <div class="col text-center">
-                        <img src="images/cris.jpg" alt="">
+                    <div class="col text-center p-0 m-0">
+                        <img class="teamImg" src="images/cris.jpg" alt="">
                         <h4>Cristina Semikina</h4>
-                        <p><i>Lorem Ipsum</i></p>
+                        <div class="d-flex flex-row justify-content-between px-5">
+                            <button href="" class="btn roundBtn"><i class="bi bi-telephone"></i></button>
+                            <button href="" class="btn emailBtn "><i class="bi bi-envelope"></i> Email</button>
+                        </div>
                     </div>
                     <div class="col text-center">
-                        <img src="images/fidalgo.jpg" alt="">
+                        <img class="teamImg" src="images/fidalgo.jpg" alt="">
                         <h4>João Fidalgo</h4>
                         <p><i>Lorem Ipsum</i></p>
                     </div>
                     <div class="col text-center">
-                        <img src="images/xico.jpg" alt="">
+                        <img class="teamImg" src="images/xico.jpg" alt="">
                         <h4>Francisco Oliveira</h4>
                         <p><i>Lorem Ipsum</i></p>
                     </div>
                     <div class="col text-center">
-                        <img src="images/daniel.jpg" alt="">
+                        <img class="teamImg" src="images/daniel.jpg" alt="">
                         <h4>Daniel Ferreira</h4>
                         <p><i>Lorem Ipsum</i></p>
                     </div>

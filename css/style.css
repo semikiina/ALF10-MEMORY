@@ -1,0 +1,115 @@
+.body{
+    background-color: #18052c;
+    color: whitesmoke;
+    overflow-x: hidden;
+}
+
+.buyBtn {
+    background-color: #9b27c5;
+    border: none;
+    color: whitesmoke;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    width: 100px;
+    border-radius: 30px;
+}
+
+.imgg{
+    width: 100%;
+    height: auto;
+    position: relative;
+}
+.imggg{
+    border-radius: 5px;
+}
+
+.imgCar{
+    height: 30rem;
+    object-fit: cover;
+    
+}
+
+.textoCar{
+    background-color: whitesmoke;
+    color: black;
+}
+
+.marg{
+    padding: 5%;
+}
+
+.danieldiv h1{
+    font-size: 5rem;
+    font-weight: 900;
+}
+
+.danieldiv img{
+    width: 50%;
+}
+
+#fosforo{
+    width: 50px;
+    height: 35rem;
+}
+
+.microchipImg{
+    width: 80%;
+}
+
+.nav-itemText {
+    color: whitesmoke;
+}
+
+.title{
+    font-size: 5rem;
+    font-weight: 900;
+    background: -webkit-linear-gradient(0deg, #FC466B 0%, #3F5EFB 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    
+}
+
+.teamImg{
+    width: 300px;
+}
+
+.howBigSection{
+    margin-top:20rem;
+}
+
+.titleSection{
+    margin-top: 10rem;
+}
+
+.howItWorksSection{
+    margin-top: 20rem;
+}
+
+.roundBtn{
+    border-radius: 50%;
+    background-color: #658534;
+    color: whitesmoke;
+    width: 50px;
+    height: 50px;
+}
+
+.emailBtn{
+    border-radius: 10px;
+    background-color: #9b27c5;
+    color: whitesmoke;
+    width: 100%;
+}
+
+.imgText{
+    background: -webkit-linear-gradient(0deg, #FC466B 0%, #3F5EFB 100%);
+    position: absolute;
+    padding: 10px 20px;
+    top:10px;
+    left: 10px;
+    font-weight: 800;
+}
