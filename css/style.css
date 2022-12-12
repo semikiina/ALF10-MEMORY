@@ -1,22 +1,8 @@
-.body{
-    background-color: #18052c;
+.body,html{
+    background-size: contain;
+    background: #18052c;
     color: whitesmoke;
     overflow-x: hidden;
-}
-
-.buyBtn {
-    background-color: #9b27c5;
-    border: none;
-    color: whitesmoke;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin: 4px 2px;
-    cursor: pointer;
-    width: 100px;
-    border-radius: 30px;
 }
 
 .imgg{
@@ -46,6 +32,27 @@
 .danieldiv h1{
     font-size: 5rem;
     font-weight: 900;
+    animation: FadeIn 3s; 
+    -webkit-animation: FadeIn 3s;
+
+    
+}
+@-webkit-keyframes FadeIn {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+@keyframes FadeIn {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
 }
 
 .danieldiv img{
@@ -69,17 +76,44 @@
     font-size: 5rem;
     font-weight: 900;
     background: -webkit-linear-gradient(0deg, #FC466B 0%, #3F5EFB 100%);
+    background-clip: initial;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     
 }
 
+.titleSemCor{
+    font-size: 5rem;
+    font-weight: 900;
+}
+
 .teamImg{
     width: 300px;
+    margin-bottom: 1rem;
 }
 
 .howBigSection{
     margin-top:20rem;
+    padding: 10rem 0px;
+    padding-bottom: 0;
+    
+    -webkit-transform: skewY(-10deg);
+    -moz-transform: skewY(-5deg);
+    -ms-transform: skewY(-5deg);
+    -o-transform: skewY(-5deg);
+    transform: skewY(-10deg);
+
+    -webkit-box-shadow: 0px -60px 50px #9b27c5;
+    -moz-box-shadow: 0px -60px 50px #9b27c5;
+    box-shadow: 0px -60px 50px #9b27c5;
+}
+
+.howBigSection > .strRow{
+    -webkit-transform: skewY(5deg);
+    -moz-transform: skewY(5deg);
+    -ms-transform: skewY(5deg);
+    -o-transform: skewY(5deg);
+    transform: skewY(10deg);
 }
 
 .titleSection{
@@ -113,3 +147,297 @@
     left: 10px;
     font-weight: 800;
 }
+
+.requi{
+    height: 30rem;
+    background-image: url("../images/view.png");
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+@keyframes float {
+	0% {
+        box-shadow: 0 0 50px #9b27c5;
+		transform: translatey(0px);
+	}
+	50% {
+		box-shadow: 0 0 50px #9b27c56e;
+		transform: translatey(-20px);
+	}
+	100% {
+		box-shadow: 0 0 50px #9b27c5;
+		transform: translatey(0px);
+	}
+}
+
+.avatar {
+	width: 70px;
+	height: 70px;
+	border-radius: 50%;
+    background-color: #9b27c5;
+	overflow: hidden;
+    border: none;
+    color: whitesmoke;
+    font-size: 30px;
+    box-shadow: 0 5px 15px 0px #fc466a6e;
+	transform: translatey(0px);
+	animation: float 2s ease-in-out infinite;
+}
+
+.avatar:hover{
+    background-color:#c527b3;
+}
+
+
+
+.form__group {
+    position: relative;
+    padding: 15px 0 0;
+    margin-top: 10px;
+    width: 100%;
+  }
+  
+  .form__field {
+    font-family: inherit;
+    width: 100%;
+    border: 0;
+    border-bottom: 2px solid #9b9b9b;
+    outline: 0;
+    font-size: 1.3rem;
+    color: #fff;
+    padding: 7px 0;
+    background: transparent;
+    transition: border-color 0.2s;
+  }
+
+
+  .form__field::placeholder {
+    color: transparent;
+  }
+
+
+  .form__field:placeholder-shown ~ .form__label {
+    font-size: 1.3rem;
+    cursor: text;
+    top: 20px;
+  }
+  
+  .form__label {
+    position: absolute;
+    top: 0;
+    display: block;
+    transition: 0.2s;
+    font-size: 1rem;
+    color: #9b9b9b;
+  }
+  
+  .form__field:focus {
+    padding-bottom: 6px;
+    font-weight: 700;
+    border-width: 3px;
+    border-image: -webkit-linear-gradient(0deg, #FC466B 0%, #3F5EFB 100%);
+    border-image-slice: 1;
+  }
+  .form__field:focus ~ .form__label {
+    position: absolute;
+    top: 0;
+    display: block;
+    transition: 0.2s;
+    font-size: 1rem;
+    color: #FC466B;
+    font-weight: 700;
+  }
+  
+  /* reset input */
+  .form__field:required, .form__field:invalid {
+    box-shadow: none;
+  }
+  
+  .FancyRow{
+    height: 600px;
+  }
+
+ .FancyCol{
+    background-image: url("../images/cerebro1.jpg");
+    background-size: cover;
+    background-position: center;
+    border-radius: 43% 57% 39% 61% / 30% 30% 70% 70% 
+ }
+
+.button {
+    margin-left: 1rem;
+    margin-top: 1rem;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;
+    border-radius: 50%;
+    display: block;
+    border: 0px;
+    font-weight: 700;
+    width: 3rem;
+    height: 3rem;
+    box-shadow: 0px 0px 14px -7px #9b27c5;
+    background-image: linear-gradient(45deg, #FC466B 0%, #3F5EFB 100%);
+    cursor: pointer;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+}
+
+.button:hover {
+    background-position: right center;
+    /* change the direction of the change here */
+    color: #fff;
+    text-decoration: none;
+    transform: translateY(-2px);
+    box-shadow: 0px 5px 10px #9b27c5;
+}
+
+
+  .imgCar{
+    height: 30rem;
+    object-fit: cover;
+    border-radius: 2rem;
+}
+
+.divtextoCar{
+    color: white;
+    border-radius: 2rem;
+    border-color: white;
+    border-style: solid;
+    background-color: #100022;
+}
+.textoCar{
+    margin: 2rem;
+    text-align: justify;
+    color: whitesmoke;
+    background-color: transparent;
+}
+
+/* stepper */
+
+.stepper-wrapper {
+    
+    margin-top: 5rem;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+
+  .stepper-item {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1;
+
+  }
+  
+  .stepper-item::before {
+    position: absolute;
+    content: "";
+    border-bottom: 2px solid #ccc;
+    width: 100%;
+    top: 10px;
+    left: -50%;
+    z-index: 2;
+  }
+  
+  .stepper-item::after {
+    position: absolute;
+    content: "";
+    border-bottom: 2px solid #ccc;
+    width: 100%;
+    top: 10px;
+    left: 50%;
+    z-index: 2;
+  }
+  
+  
+  .stepper-item .step-counter {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: #ccc;
+    box-shadow: 0 0 10px #bb00ff;
+
+    margin-bottom: 6px;
+  }
+  
+  .stepper-item:first-child::before {
+    content: none;
+  }
+  .stepper-item:last-child::after {
+    content: none;
+  }
+
+  .nav-itemText{
+    font-weight: bold;
+    color: #20afe0;
+  }
+  .nav-itemText:hover{
+    color: whitesmoke;
+    transform: translateY(-5px);
+  }
+
+  .featuresSection{
+    margin-top: 20rem;
+  }
+
+  .info-col{
+    max-width: 20rem;
+  }
+
+  .teamSection{
+    margin-top: 20rem;
+  }
+
+  .requirementsSection{
+    margin-top: 20rem;
+  }
+
+  .howIcons{
+    color: whitesmoke;
+  }
+
+  .howIcons:hover{
+    color: whitesmoke;
+  }
+
+  /* before and after section */
+
+  .gallery {
+      --z: 32px; /* control the zig-zag  */
+      --s: 360px; /* control the size */
+      --g: 20px; /* control the gap */
+    
+      display: grid;
+      gap: var(--g);
+      width: calc(2 * var(--s) + var(--g));
+      grid-auto-flow: column;
+  }
+  .gallery > img {
+    width: 0;
+    min-width: calc(100% + var(--z) / 2);
+    object-fit: cover;
+    height: 35rem;
+    cursor: pointer;
+    transition: 1s;
+  }
+  .gallery > img:hover {
+    width: calc(var(--s) / 2);
+  }
+
+
+  .sectionBeforeAfter{
+    margin-top: 20rem;
+  }
+  
