@@ -398,6 +398,7 @@
 
   .teamSection{
     margin-top: 20rem;
+    margin-bottom: 6rem;
   }
 
   .requirementsSection{
@@ -439,5 +440,13 @@
 
   .sectionBeforeAfter{
     margin-top: 20rem;
+  }
+  .inputsubmit{
+    background: -webkit-linear-gradient(0deg, #FC466B 0%, #3F5EFB 100%);
+    border-radius: 50px;
+    font-size: large;
+    color: whitesmoke;
+    width: 100%;
+    padding: 0.5rem;
   }
   
