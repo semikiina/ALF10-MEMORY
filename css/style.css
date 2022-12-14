@@ -450,4 +450,10 @@
     width: 100%;
     padding: 0.5rem;
   }
+
+  .bandeira{
+    margin-right: 2rem;
+    
+    text-decoration : none;
+  }
   
